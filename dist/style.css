@@ -1,0 +1,112 @@
+@import url("../font/Bebas.ttf");
+:root {
+  --primary-font: "Bebas", sans-serif;
+  --secondary-font: "Consolas", monospace;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  color: #ffffff;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:link,
+a:visited a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+h1 {
+  font-family: var(--primary-font);
+  font-size: 8.9em;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.2em;
+}
+
+h4 {
+  font-family: var(--secondary-font);
+  font-size: 2.1em;
+  font-weight: 300;
+  margin-bottom: 1.6em;
+}
+
+p {
+  font-family: var(--secondary-font);
+  font-size: 1.6em;
+  line-height: 1.6;
+}
+
+hr {
+  width: 8rem;
+  height: 0.3rem;
+  background: #ffffff;
+  border: 0;
+  margin: 2.4rem 0;
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.image {
+  position: absolute;
+  top: -25em;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+}
+
+.image::after {
+  content: "";
+  position: absolute;
+  height: 140%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+}
+
+.image img {
+  height: 140%;
+  width: 100%;
+}
+
+.text {
+  padding-left: 16rem;
+  width: 50%;
+  margin-bottom: 2.4em;
+}
+span {
+  text-decoration: underline;
+}
+
+.icons {
+  display: flex;
+  padding-left: 16em;
+  align-items: center;
+}
+svg {
+  height: 3.2em;
+  width: 3.2em;
+  margin-right: 2.4em;
+}
